@@ -7,3 +7,7 @@
 // Sour Punch Straws
 // Kit Kats
 // Reese's Cups
+
+fetch("http://localhost:3000/candies")
+.then(res => res.json())
+.then(candy => console.log(candy.name))
